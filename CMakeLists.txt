@@ -11,4 +11,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
 # This will find the Qt5 files. You will need a QT5_DIR env variable
-find_package(Qt5Widgets REQUIRED) # Equivalent of QT += 
+find_package(Qt5Widgets REQUIRED) # Equivalent of QT += widgets
+
+find_package(OpenCV 3.0 QUIET)
+if(NOT OpenCV_FOUND)
+   find_package(OpenCV 2.4.3 QUIET)
+   if(NOT OpenCV_FOUND)
+      message(FATAL_ERROR "OpenCV > 2.4.3 not found.")
+   endif
