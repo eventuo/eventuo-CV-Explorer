@@ -18,4 +18,9 @@ if(NOT OpenCV_FOUND)
    find_package(OpenCV 2.4.3 QUIET)
    if(NOT OpenCV_FOUND)
       message(FATAL_ERROR "OpenCV > 2.4.3 not found.")
-   endif
+   endif()
+endif()
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+#set(SOURCES main.cpp mainwindow.cpp testitemlistmodel.cpp)
+#set(HEADERS mainwindow.h testclass.h testitemlistmodel.h)
