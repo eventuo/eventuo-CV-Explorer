@@ -24,3 +24,8 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 #set(SOURCES main.cpp mainwindow.cpp testitemlistmodel.cpp)
 #set(HEADERS mainwindow.h testclass.h testitemlistmodel.h)
+#set(UI mainwindow.ui)
+
+list(APPEND SOURCES main.cpp                                        
+    mainwindow.cpp                                                  
+    ImageFileOpt/ImageFileOpt.cpp         
