@@ -31,4 +31,6 @@ list(APPEND SOURCES main.cpp
     ImageFileOpt/ImageFileOpt.cpp                                   
     ImageProcess/CVImgProc.cpp                                      
     SubWindow/SelChannelDlg.cpp                                     
-    SubWindow/S
+    SubWindow/SelFlipTypeDlg.cpp                                    
+    SubWindow/SelColorReduceDivDlg.cpp                              
+    SubWindow/SelThreshDlg.cpp            
