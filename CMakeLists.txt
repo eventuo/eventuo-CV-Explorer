@@ -33,4 +33,8 @@ list(APPEND SOURCES main.cpp
     SubWindow/SelChannelDlg.cpp                                     
     SubWindow/SelFlipTypeDlg.cpp                                    
     SubWindow/SelColorReduceDivDlg.cpp                              
-    SubWindow/SelThreshDlg.cpp            
+    SubWindow/SelThreshDlg.cpp                                      
+    ImageProcess/SkinDetector.cpp)
+
+list(APPEND HEADERS mainwindow.h                                    
+    ImageFileOpt/ImageFileOpt.h    
