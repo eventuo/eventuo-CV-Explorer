@@ -28,4 +28,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 list(APPEND SOURCES main.cpp                                        
     mainwindow.cpp                                                  
-    ImageFileOpt/ImageFileOpt.cpp         
+    ImageFileOpt/ImageFileOpt.cpp                                   
+    ImageProcess/CVImgProc.cpp                                      
+    SubWindow/SelChannelDlg.cpp                                     
+    SubWindow/S
