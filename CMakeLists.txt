@@ -37,4 +37,7 @@ list(APPEND SOURCES main.cpp
     ImageProcess/SkinDetector.cpp)
 
 list(APPEND HEADERS mainwindow.h                                    
-    ImageFileOpt/ImageFileOpt.h    
+    ImageFileOpt/ImageFileOpt.h                                     
+    ImageProcess/CVImgProc.h                                        
+    SubWindow/SelChannelDlg.h                                       
+    SubWindow/SelFlipTypeDlg.h            
