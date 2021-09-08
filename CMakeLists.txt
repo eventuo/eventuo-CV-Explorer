@@ -47,4 +47,10 @@ list(APPEND HEADERS mainwindow.h
 
 list(APPEND FORMS mainwindow.ui                                     
     SubWindow/SelChannelDlg.ui                                      
-    SubWindow/SelFlipTypeDlg.ui       
+    SubWindow/SelFlipTypeDlg.ui                                     
+    SubWindow/SelColorReduceDivDlg.ui                               
+    SubWindow/SelThreshDlg.ui)
+
+qt5_add_resources(QRC_FILES dipdemo.qrc)
+
+add_executab
