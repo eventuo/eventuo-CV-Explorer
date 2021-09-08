@@ -43,4 +43,8 @@ list(APPEND HEADERS mainwindow.h
     SubWindow/SelFlipTypeDlg.h                                      
     SubWindow/SelColorReduceDivDlg.h                                
     SubWindow/SelThreshDlg.h                                        
-    ImagePr
+    ImageProcess/SkinDetector.h)
+
+list(APPEND FORMS mainwindow.ui                                     
+    SubWindow/SelChannelDlg.ui                                      
+    SubWindow/SelFlipTypeDlg.ui       
