@@ -53,4 +53,5 @@ list(APPEND FORMS mainwindow.ui
 
 qt5_add_resources(QRC_FILES dipdemo.qrc)
 
-add_executab
+add_executable(DIPDemoQt ${SOURCES} ${HEADERS} ${FORMS} ${QRC_FILES})
+target_link_libraries(DIPDemoQt Qt5::Widgets ${OpenCV_LIBS})
