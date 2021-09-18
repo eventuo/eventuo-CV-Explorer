@@ -10,4 +10,8 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = DIPDemo
 TEMPLATE = app
-Q
+QMAKE_CXXFLAGS += -std=c++11
+
+SOURCES += main.cpp                                                 \
+    mainwindow.cpp                                                  \
+    ImageFileOpt/ImageF
