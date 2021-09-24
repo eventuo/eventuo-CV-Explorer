@@ -16,4 +16,7 @@ SOURCES += main.cpp                                                 \
     mainwindow.cpp                                                  \
     ImageFileOpt/ImageFileOpt.cpp                                   \
     ImageProcess/CVImgProc.cpp                                      \
-    SubWindow/SelChannelDlg.cpp                                    
+    SubWindow/SelChannelDlg.cpp                                     \
+    SubWindow/SelFlipTypeDlg.cpp                                    \
+    SubWindow/SelColorReduceDivDlg.cpp                              \
+    SubWindow/SelThreshDlg.cpp             
