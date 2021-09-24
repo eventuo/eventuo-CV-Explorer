@@ -14,4 +14,6 @@ QMAKE_CXXFLAGS += -std=c++11
 
 SOURCES += main.cpp                                                 \
     mainwindow.cpp                                                  \
-    ImageFileOpt/ImageF
+    ImageFileOpt/ImageFileOpt.cpp                                   \
+    ImageProcess/CVImgProc.cpp                                      \
+    SubWindow/SelChannelDlg.cpp                                    
