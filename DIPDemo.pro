@@ -26,4 +26,6 @@ HEADERS += mainwindow.h                                             \
     ImageFileOpt/ImageFileOpt.h                                     \
     ImageProcess/CVImgProc.h                                        \
     SubWindow/SelChannelDlg.h                                       \
-    SubWindow/SelFlipTypeDlg.h   
+    SubWindow/SelFlipTypeDlg.h                                      \
+    SubWindow/SelColorReduceDivDlg.h                                \
+    SubWindow/SelThreshDlg.h                                        
