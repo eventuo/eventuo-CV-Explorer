@@ -28,4 +28,8 @@ HEADERS += mainwindow.h                                             \
     SubWindow/SelChannelDlg.h                                       \
     SubWindow/SelFlipTypeDlg.h                                      \
     SubWindow/SelColorReduceDivDlg.h                                \
-    SubWindow/SelThreshDlg.h                                        
+    SubWindow/SelThreshDlg.h                                        \
+    ImageProcess/SkinDetector.h
+
+FORMS   += mainwindow.ui                                            \
+    SubWindow/SelChannelDlg.ui                                      
