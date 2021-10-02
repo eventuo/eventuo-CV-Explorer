@@ -32,4 +32,10 @@ HEADERS += mainwindow.h                                             \
     ImageProcess/SkinDetector.h
 
 FORMS   += mainwindow.ui                                            \
-    SubWindow/SelChannelDlg.ui                                      
+    SubWindow/SelChannelDlg.ui                                      \
+    SubWindow/SelFlipTypeDlg.ui                                     \
+    SubWindow/SelColorReduceDivDlg.ui                               \
+    SubWindow/SelThreshDlg.ui
+
+win32 {
+
