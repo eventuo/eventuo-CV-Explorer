@@ -39,3 +39,10 @@ FORMS   += mainwindow.ui                                            \
 
 win32 {
 
+OpenCV_RootDir = D:\OpenCV249
+
+INCLUDEPATH += $$OpenCV_RootDir\build\include
+
+OpenCV_LIBS_PREFIX = $$OpenCV_RootDir\build_qt5\lib
+
+LIBS += $$OpenCV_LIBS_PREFIX\libopencv_calib3d249.dll.a       
