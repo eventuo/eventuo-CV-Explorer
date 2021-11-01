@@ -51,4 +51,7 @@ LIBS += $$OpenCV_LIBS_PREFIX\libopencv_calib3d249.dll.a             \
     $$OpenCV_LIBS_PREFIX\libopencv_features2d249.dll.a              \
     $$OpenCV_LIBS_PREFIX\libopencv_flann249.dll.a                   \
     $$OpenCV_LIBS_PREFIX\libopencv_gpu249.dll.a                     \
-    $$OpenCV_LI
+    $$OpenCV_LIBS_PREFIX\libopencv_highgui249.dll.a                 \
+    $$OpenCV_LIBS_PREFIX\libopencv_imgproc249.dll.a                 \
+    $$OpenCV_LIBS_PREFIX\libopencv_legacy249.dll.a                  \
+    $$OpenCV_LIBS_PREFIX\libo
