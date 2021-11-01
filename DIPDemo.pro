@@ -45,4 +45,7 @@ INCLUDEPATH += $$OpenCV_RootDir\build\include
 
 OpenCV_LIBS_PREFIX = $$OpenCV_RootDir\build_qt5\lib
 
-LIBS += $$OpenCV_LIBS_PREFIX\libopencv_calib3d249.dll.a       
+LIBS += $$OpenCV_LIBS_PREFIX\libopencv_calib3d249.dll.a             \
+    $$OpenCV_LIBS_PREFIX\libopencv_contrib249.dll.a                 \
+    $$OpenCV_LIBS_PREFIX\libopencv_core249.dll.a                    \
+    $$OpenCV_LIBS_PREFIX\libopencv_features2d249.d
