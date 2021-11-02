@@ -61,4 +61,10 @@ LIBS += $$OpenCV_LIBS_PREFIX\libopencv_calib3d249.dll.a             \
 
 unix {
 
-# Ubuntu 16.04 with OpenCV in ROS Ki
+# Ubuntu 16.04 with OpenCV in ROS Kinetic
+
+#INCLUDEPATH += /opt/ros/kinetic/include/opencv-3.3.1-dev/
+
+#LIBS += -L /opt/ros/kinetic/lib/x86_64-linux-gnu
+
+#LIBS += /opt/ros/kinetic/lib/x86_64-linux-gnu/libop
