@@ -54,4 +54,11 @@ LIBS += $$OpenCV_LIBS_PREFIX\libopencv_calib3d249.dll.a             \
     $$OpenCV_LIBS_PREFIX\libopencv_highgui249.dll.a                 \
     $$OpenCV_LIBS_PREFIX\libopencv_imgproc249.dll.a                 \
     $$OpenCV_LIBS_PREFIX\libopencv_legacy249.dll.a                  \
-    $$OpenCV_LIBS_PREFIX\libo
+    $$OpenCV_LIBS_PREFIX\libopencv_ml249.dll.a                      \
+    $$OpenCV_LIBS_PREFIX\libopencv_objdetect249.dll.a               \
+    $$OpenCV_LIBS_PREFIX\libopencv_video249.dll.a
+}
+
+unix {
+
+# Ubuntu 16.04 with OpenCV in ROS Ki
