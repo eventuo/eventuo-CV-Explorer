@@ -73,4 +73,12 @@ unix {
 #    /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgcodecs3.so  \
 #    /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_ml3.so         \
 #    /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_video3.so      \
-#    /opt/ros/kinetic/lib/x86_64
+#    /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_videoio3.so
+
+
+# Ubuntu 18.04 with OpenCV in ROS Melodic
+
+OpenCV_RootDir = /usr
+OpenCV_LIBS_PREFIX = $$OpenCV_RootDir/lib/x86_64-linux-gnu
+
+INCLUDEPATH += $$OpenCV_RootDir/include/
