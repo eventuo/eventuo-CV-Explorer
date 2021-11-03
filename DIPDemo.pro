@@ -67,4 +67,7 @@ unix {
 
 #LIBS += -L /opt/ros/kinetic/lib/x86_64-linux-gnu
 
-#LIBS += /opt/ros/kinetic/lib/x86_64-linux-gnu/libop
+#LIBS += /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so   \
+#    /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_highgui3.so    \
+#    /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so    \
+#    /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_i
