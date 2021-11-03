@@ -81,4 +81,10 @@ unix {
 OpenCV_RootDir = /usr
 OpenCV_LIBS_PREFIX = $$OpenCV_RootDir/lib/x86_64-linux-gnu
 
-INCLUDEPATH += $$OpenCV_RootDir/include/
+INCLUDEPATH += $$OpenCV_RootDir/include/opencv
+
+LIBS += -L $$OpenCV_LIBS_PREFIX
+
+LIBS += $$OpenCV_LIBS_PREFIX/libopencv_core.so   \
+    $$OpenCV_LIBS_PREFIX/libopencv_highgui.so    \
+    $$OpenCV_LIBS
