@@ -87,4 +87,7 @@ LIBS += -L $$OpenCV_LIBS_PREFIX
 
 LIBS += $$OpenCV_LIBS_PREFIX/libopencv_core.so   \
     $$OpenCV_LIBS_PREFIX/libopencv_highgui.so    \
-    $$OpenCV_LIBS
+    $$OpenCV_LIBS_PREFIX/libopencv_imgproc.so    \
+    $$OpenCV_LIBS_PREFIX/libopencv_imgcodecs.so  \
+    $$OpenCV_LIBS_PREFIX/libopencv_ml.so         \
+    $$OpenCV_LIBS_PREFIX/libopencv_video.
