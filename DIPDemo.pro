@@ -90,4 +90,12 @@ LIBS += $$OpenCV_LIBS_PREFIX/libopencv_core.so   \
     $$OpenCV_LIBS_PREFIX/libopencv_imgproc.so    \
     $$OpenCV_LIBS_PREFIX/libopencv_imgcodecs.so  \
     $$OpenCV_LIBS_PREFIX/libopencv_ml.so         \
-    $$OpenCV_LIBS_PREFIX/libopencv_video.
+    $$OpenCV_LIBS_PREFIX/libopencv_video.so      \
+    $$OpenCV_LIBS_PREFIX/libopencv_videoio.so
+}
+
+RESOURCES += dipdemo.qrc
+
+DESTDIR = ../Output
+
+message($$OpenCV_RootDir)
