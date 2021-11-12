@@ -12,4 +12,8 @@ int ImageFileOpt::OpenImage(QFileInfo &infoImgFile)
 //                                         tr("Image Files(*.png *.jpg *.jpeg *.bmp)"));
 
     QString selfilter = tr("Image Files(*.png *.jpg *.jpeg *.bmp);;All Files(*)");
-    QFileDialog *dlgFile = n
+    QFileDialog *dlgFile = new QFileDialog(this,"File Dialog",".",selfilter);
+    dlgFile->setFilter(QDir::Files);
+    dlgFile->setViewMode(QFileDialog::List);
+    dlgFile->setFileMode(QFileDialog::ExistingFile);
+    if(dlg
