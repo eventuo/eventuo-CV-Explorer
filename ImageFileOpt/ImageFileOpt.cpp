@@ -16,4 +16,9 @@ int ImageFileOpt::OpenImage(QFileInfo &infoImgFile)
     dlgFile->setFilter(QDir::Files);
     dlgFile->setViewMode(QFileDialog::List);
     dlgFile->setFileMode(QFileDialog::ExistingFile);
-    if(dlg
+    if(dlgFile->exec() == QDialog::Accepted)
+    {
+        QStringList pathListImg;
+        pathListImg = dlgFile->selectedFiles();
+        infoImgFile = QFileInfo(pathListImg.at(0));
+        retu
