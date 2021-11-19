@@ -38,4 +38,16 @@ int ImageFileOpt::SaveImage(cv::Mat image)
                               tr("Image Files(*.png *.jpg *.jpeg *.bmp)"));
     if (!filePath.isNull())
     {
-        return procCVImg.SaveImage(image,filePa
+        return procCVImg.SaveImage(image,filePath);
+    }
+    else
+    {
+        //点的是取消
+        return 1;
+    }
+}
+
+bool ImageFileOpt::LoadQssFile(const QString &pathQSS, QApplication *qApplication)
+{
+    //加载CSS样式表文件并应用相应样式
+    QFile qssFile(path
