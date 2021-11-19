@@ -33,4 +33,9 @@ int ImageFileOpt::SaveImage(cv::Mat image)
 {
     QString filePath = QFileDialog
             ::getSaveFileName(this,
-                              tr
+                              tr("保存图像"),
+                              ".",
+                              tr("Image Files(*.png *.jpg *.jpeg *.bmp)"));
+    if (!filePath.isNull())
+    {
+        return procCVImg.SaveImage(image,filePa
