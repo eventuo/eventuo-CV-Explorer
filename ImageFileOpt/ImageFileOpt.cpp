@@ -21,4 +21,16 @@ int ImageFileOpt::OpenImage(QFileInfo &infoImgFile)
         QStringList pathListImg;
         pathListImg = dlgFile->selectedFiles();
         infoImgFile = QFileInfo(pathListImg.at(0));
-        retu
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+int ImageFileOpt::SaveImage(cv::Mat image)
+{
+    QString filePath = QFileDialog
+            ::getSaveFileName(this,
+                              tr
