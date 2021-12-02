@@ -57,4 +57,13 @@ bool ImageFileOpt::LoadQssFile(const QString &pathQSS, QApplication *qApplicatio
         if(qssFile.isOpen())
         {
             QString qss = QLatin1String(qssFile.readAll());
-           
+            qApplication->setStyleSheet(qss);
+            qssFile.close();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    e
