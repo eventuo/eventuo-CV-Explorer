@@ -50,4 +50,11 @@ int ImageFileOpt::SaveImage(cv::Mat image)
 bool ImageFileOpt::LoadQssFile(const QString &pathQSS, QApplication *qApplication)
 {
     //加载CSS样式表文件并应用相应样式
-    QFile qssFile(path
+    QFile qssFile(pathQSS);
+    if(qssFile.exists())
+    {
+        qssFile.open(QFile::ReadOnly);
+        if(qssFile.isOpen())
+        {
+            QString qss = QLatin1String(qssFile.readAll());
+           
