@@ -66,4 +66,9 @@ bool ImageFileOpt::LoadQssFile(const QString &pathQSS, QApplication *qApplicatio
             return false;
         }
     }
-    e
+    else
+    {
+        QMessageBox::warning(NULL,"Qss文件错误",pathQSS+"找不到！");
+        return false;
+    }
+}
