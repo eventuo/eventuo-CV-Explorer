@@ -23,3 +23,11 @@ public:
     cv::Mat EqualizeImgHist(const cv::Mat &imgSrcGray);
 
     cv::Mat ThresholdImg(const cv::Mat &imgSrcGray,double thresh);
+
+    cv::Mat colorReduce(const cv::Mat &imgSrc,int div=64);
+
+    cv::Mat SaltImage(const cv::Mat &imgSrc,int n=8000);
+
+    cv::Mat FlipImg(const cv::Mat &imgSrc,int type);
+
+    cv:
