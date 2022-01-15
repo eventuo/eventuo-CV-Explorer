@@ -13,4 +13,11 @@ cv::Mat SkinDetector::GetSkin_YCrCb(const cv::Mat &srcImg)
     int Y_MAX  = 255;
     int Cr_MIN = 133;
     int Cr_MAX = 173;
-    int Cb_MIN =
+    int Cb_MIN = 77;
+    int Cb_MAX = 127;
+
+    cv::Mat skin;
+    //first convert our RGB image to YCrCb
+    cv::cvtColor(srcImg,skin,cv::COLOR_BGR2YCrCb);
+
+    //uncomment the following line 
