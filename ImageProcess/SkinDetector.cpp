@@ -24,4 +24,12 @@ cv::Mat SkinDetector::GetSkin_YCrCb(const cv::Mat &srcImg)
     //cv::imshow("YCrCb Color Space",skin);
 
     //filter the image in YCrCb color space
-    cv::inRange(skin,cv::Scalar(Y_MIN,Cr_MIN,Cb_MIN),cv::Scalar(Y_MAX,Cr_MAX
+    cv::inRange(skin,cv::Scalar(Y_MIN,Cr_MIN,Cb_MIN),cv::Scalar(Y_MAX,Cr_MAX,Cb_MAX),skin);
+
+    return skin;
+}
+
+/*
+Nusirwan Anwar bin Abdul Rahman, Kit Chong Wei and John See.
+RGB-H-CbCr Skin Colour Model for Human Face Detection.*/
+cv::Mat SkinDetector::GetS
