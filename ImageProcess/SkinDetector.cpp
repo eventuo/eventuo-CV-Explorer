@@ -37,4 +37,9 @@ cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
     cv::Mat dst = srcImg.clone();
 
     cv::Vec3b cwhite = cv::Vec3b::all(255);
-    cv::Vec3b cblack = cv
+    cv::Vec3b cblack = cv::Vec3b::all(0);
+
+    cv::Mat src_ycrcb, src_hsv;
+    // OpenCV scales the YCrCb components, so that they
+    // cover the whole value range of [0,255], so there's
+ 
