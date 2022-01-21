@@ -32,4 +32,9 @@ cv::Mat SkinDetector::GetSkin_YCrCb(const cv::Mat &srcImg)
 /*
 Nusirwan Anwar bin Abdul Rahman, Kit Chong Wei and John See.
 RGB-H-CbCr Skin Colour Model for Human Face Detection.*/
-cv::Mat SkinDetector::GetS
+cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
+    // allocate the result matrix
+    cv::Mat dst = srcImg.clone();
+
+    cv::Vec3b cwhite = cv::Vec3b::all(255);
+    cv::Vec3b cblack = cv
