@@ -42,4 +42,8 @@ cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
     cv::Mat src_ycrcb, src_hsv;
     // OpenCV scales the YCrCb components, so that they
     // cover the whole value range of [0,255], so there's
- 
+    // no need to scale the values:
+    cv::cvtColor(srcImg, src_ycrcb, CV_BGR2YCrCb);
+    // OpenCV scales the Hue Channel to [0,180] for
+    // 8bit images, so make sure we are operating on
+   
