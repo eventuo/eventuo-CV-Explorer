@@ -46,4 +46,7 @@ cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
     cv::cvtColor(srcImg, src_ycrcb, CV_BGR2YCrCb);
     // OpenCV scales the Hue Channel to [0,180] for
     // 8bit images, so make sure we are operating on
-   
+    // the full spectrum from [0,360] by using floating
+    // point precision:
+    srcImg.convertTo(src_hsv, CV_32FC3);
+    cv::cvtColor(src_hsv, src_hsv, CV_BGR2
