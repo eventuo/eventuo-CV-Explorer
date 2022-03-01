@@ -59,4 +59,9 @@ cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
             cv::Vec3b pix_bgr = srcImg.ptr<cv::Vec3b>(i)[j];
             int B = pix_bgr.val[0];
             int G = pix_bgr.val[1];
-            int R = 
+            int R = pix_bgr.val[2];
+            // apply rgb rule
+            bool a = R1(R,G,B);
+
+            cv::Vec3b pix_ycrcb = src_ycrcb.ptr<cv::Vec3b>(i)[j];
+            int Y = pix_ycrcb.val[0
