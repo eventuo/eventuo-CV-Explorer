@@ -54,4 +54,9 @@ cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
     cv::normalize(src_hsv, src_hsv, 0.0, 255.0, cv::NORM_MINMAX, CV_32FC3);
 
     for(int i = 0; i < srcImg.rows; i++) {
-        for(int j = 0; j < srcImg.c
+        for(int j = 0; j < srcImg.cols; j++) {
+
+            cv::Vec3b pix_bgr = srcImg.ptr<cv::Vec3b>(i)[j];
+            int B = pix_bgr.val[0];
+            int G = pix_bgr.val[1];
+            int R = 
