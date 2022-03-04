@@ -84,4 +84,8 @@ cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
     return dst;
 }
 
-bool SkinDetector::R1(int R, int
+bool SkinDetector::R1(int R, int G, int B) {
+    bool e1 = (R>95) && (G>40) && (B>20) &&
+            ((cv::max(R,cv::max(G,B)) - cv::min(R, cv::min(G,B)))>15) &&
+            (abs(R-G)>15) && (R>G) && (R>B);
+ 
