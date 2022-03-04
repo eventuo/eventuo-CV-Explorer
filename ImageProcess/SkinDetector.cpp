@@ -70,4 +70,9 @@ cv::Mat SkinDetector::GetSkin_RGBHCbCr(cv::Mat const &srcImg) {
             // apply ycrcb rule
             bool b = R2(Y,Cr,Cb);
 
-            cv::Vec3f pix_hsv = s
+            cv::Vec3f pix_hsv = src_hsv.ptr<cv::Vec3f>(i)[j];
+            float H = pix_hsv.val[0];
+            float S = pix_hsv.val[1];
+            float V = pix_hsv.val[2];
+            // apply hsv rule
+  
