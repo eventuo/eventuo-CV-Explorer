@@ -94,4 +94,9 @@ bool SkinDetector::R1(int R, int G, int B) {
 }
 
 bool SkinDetector::R2(float Y, float Cr, float Cb) {
-    bool e3 = 
+    bool e3 = Cr <= 1.5862*Cb+20;
+    bool e4 = Cr >= 0.3448*Cb+76.2069;
+    bool e5 = Cr >= -4.5652*Cb+234.5652;
+    bool e6 = Cr <= -1.15*Cb+301.75;
+    bool e7 = Cr <= -2.2857*Cb+432.85;
+    return e3 && e4 && e5 && e6 &
