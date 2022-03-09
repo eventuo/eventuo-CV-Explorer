@@ -1,0 +1,6 @@
+QAction,QLabel
+{
+    font:16px;
+}
+
+QLabel[objectName="objLabelS

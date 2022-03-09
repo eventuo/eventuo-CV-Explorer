@@ -99,4 +99,9 @@ bool SkinDetector::R2(float Y, float Cr, float Cb) {
     bool e5 = Cr >= -4.5652*Cb+234.5652;
     bool e6 = Cr <= -1.15*Cb+301.75;
     bool e7 = Cr <= -2.2857*Cb+432.85;
-    return e3 && e4 && e5 && e6 &
+    return e3 && e4 && e5 && e6 && e7;
+}
+
+bool SkinDetector::R3(float H, float S, float V) {
+    return (H<25) || (H > 230);
+}
