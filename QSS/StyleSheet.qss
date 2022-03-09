@@ -3,4 +3,14 @@ QAction,QLabel
     font:16px;
 }
 
-QLabel[objectName="objLabelS
+QLabel[objectName="objLabelSrcImgTitle"],
+QLabel[objectName="objLabelDstImgTitle"]
+{
+    background:rgb(150,200,250);
+    color:red;
+    font-size:20px;
+    /*font-family:"黑体";*/
+    border-radius:10px;
+}
+
+QLabel[o
