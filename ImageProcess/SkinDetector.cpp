@@ -88,4 +88,10 @@ bool SkinDetector::R1(int R, int G, int B) {
     bool e1 = (R>95) && (G>40) && (B>20) &&
             ((cv::max(R,cv::max(G,B)) - cv::min(R, cv::min(G,B)))>15) &&
             (abs(R-G)>15) && (R>G) && (R>B);
- 
+    bool e2 = (R>220) && (G>210) && (B>170) &&
+            (abs(R-G)<=15) && (R>B) && (G>B);
+    return (e1||e2);
+}
+
+bool SkinDetector::R2(float Y, float Cr, float Cb) {
+    bool e3 = 
