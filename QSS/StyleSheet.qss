@@ -13,4 +13,12 @@ QLabel[objectName="objLabelDstImgTitle"]
     border-radius:10px;
 }
 
-QLabel[o
+QLabel[objectName="objLabelSrcImg"],
+QLabel[objectName="objLabelDstImg"]
+{
+    background:rgb(255,255,255);
+    border:10px;
+}
+
+QLabel[objectName="objLabelSrcImgInfos"],
+QLabel[objectName="objLabelDstImgInfos"
