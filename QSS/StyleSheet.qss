@@ -21,4 +21,9 @@ QLabel[objectName="objLabelDstImg"]
 }
 
 QLabel[objectName="objLabelSrcImgInfos"],
-QLabel[objectName="objLabelDstImgInfos"
+QLabel[objectName="objLabelDstImgInfos"]
+{
+    background:rgb(192,192,192);
+    color:blue;
+    border:10px;
+}
