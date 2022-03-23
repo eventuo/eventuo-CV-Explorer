@@ -13,4 +13,12 @@ SelChannelDlg::SelChannelDlg(QWidget *parent, int countChannel) :
     }
 }
 
-SelChannelDlg::~SelCha
+SelChannelDlg::~SelChannelDlg()
+{
+    delete ui;
+}
+
+void SelChannelDlg::on_buttonBox_accepted()
+{
+    indexChannel = ui->cmbBoxChannel->currentText().toInt();
+}
