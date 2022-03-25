@@ -22,4 +22,10 @@
      <height>41</height>
     </rect>
    </property>
-   <property name="orientatio
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </wid
