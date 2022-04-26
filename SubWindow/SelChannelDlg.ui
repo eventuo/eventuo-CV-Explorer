@@ -45,4 +45,12 @@
     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget 
+  <widget class="QComboBox" name="cmbBoxChannel">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>70</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </pro
