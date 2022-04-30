@@ -53,4 +53,15 @@
      <width>81</width>
      <height>22</height>
     </rect>
-   </pro
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SelChannelDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+ 
