@@ -64,4 +64,14 @@
    <receiver>SelChannelDlg</receiver>
    <slot>accept()</slot>
    <hints>
- 
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
