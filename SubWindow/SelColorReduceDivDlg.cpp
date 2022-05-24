@@ -8,4 +8,12 @@ SelColorReduceDivDlg::SelColorReduceDivDlg(QWidget *parent) :
     ui->setupUi(this);
 }
 
-SelColorRed
+SelColorReduceDivDlg::~SelColorReduceDivDlg()
+{
+    delete ui;
+}
+
+void SelColorReduceDivDlg::on_buttonBox_accepted()
+{
+    divColorReduce = ui->cmbBoxDiv->currentText().toInt();
+}
