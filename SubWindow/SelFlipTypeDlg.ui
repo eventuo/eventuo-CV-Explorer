@@ -4,4 +4,13 @@
  <widget class="QDialog" name="SelFlipTypeDlg">
   <property name="geometry">
    <rect>
-  
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>255</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图像反转类型选择</string>
+  </property>
+  <widget class="QDialogButtonBox"
