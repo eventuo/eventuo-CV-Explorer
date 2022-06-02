@@ -13,4 +13,13 @@
   <property name="windowTitle">
    <string>图像反转类型选择</string>
   </property>
-  <widget class="QDialogButtonBox"
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>170</y>
+     <width>161</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property na
