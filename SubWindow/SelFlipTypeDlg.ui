@@ -27,4 +27,12 @@
    </property>
    <property name="standardButtons">
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </prope
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cmbBoxFlipType">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>90</y>
+     <width>81</width>
+     <he
