@@ -35,4 +35,15 @@
      <x>220</x>
      <y>90</y>
      <width>81</width>
-     <he
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>水平反转</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>垂直反转</string>
+  
