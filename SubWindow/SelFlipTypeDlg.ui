@@ -55,4 +55,14 @@
    </item>
   </widget>
   <widget class="QLabel" name="label">
-   <property name=
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>90</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>请选择图像反转类型：</string>
+   </
