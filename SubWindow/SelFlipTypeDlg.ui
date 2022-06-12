@@ -74,4 +74,12 @@
  <resources/>
  <connections>
   <connection>
-   <sender>buttonBox
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SelFlipTypeDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hi
