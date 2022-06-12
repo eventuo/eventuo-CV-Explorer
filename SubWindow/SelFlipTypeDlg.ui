@@ -65,4 +65,13 @@
    </property>
    <property name="text">
     <string>请选择图像反转类型：</string>
-   </
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox
