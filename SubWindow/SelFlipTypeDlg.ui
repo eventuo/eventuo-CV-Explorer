@@ -91,4 +91,11 @@
   </connection>
   <connection>
    <sender>buttonBox</sender>
-   <signal>rejected()</si
+   <signal>rejected()</signal>
+   <receiver>SelFlipTypeDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    
