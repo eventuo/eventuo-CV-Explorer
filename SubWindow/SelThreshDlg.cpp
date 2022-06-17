@@ -13,4 +13,11 @@ SelThreshDlg::~SelThreshDlg()
     delete ui;
 }
 
-void SelThreshDlg::on_horizontalSlider_v
+void SelThreshDlg::on_horizontalSlider_valueChanged(int value)
+{
+    ui->labelThreshValue->setText(QString::number(value));
+}
+
+void SelThreshDlg::on_buttonBox_accepted()
+{
+    threshValue = (double)(ui->horizontalSlider->val
