@@ -20,4 +20,5 @@ void SelThreshDlg::on_horizontalSlider_valueChanged(int value)
 
 void SelThreshDlg::on_buttonBox_accepted()
 {
-    threshValue = (double)(ui->horizontalSlider->val
+    threshValue = (double)(ui->horizontalSlider->value());
+}
