@@ -11,4 +11,14 @@ class SelThreshDlg : public QDialog
 {
     Q_OBJECT
 
-publ
+public:
+    explicit SelThreshDlg(QWidget *parent = 0);
+    ~SelThreshDlg();
+
+private slots:
+    void on_horizontalSlider_valueChanged(int value);
+
+    void on_buttonBox_accepted();
+
+public:
+    double thres
