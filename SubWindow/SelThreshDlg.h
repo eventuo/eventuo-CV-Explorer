@@ -21,4 +21,10 @@ private slots:
     void on_buttonBox_accepted();
 
 public:
-    double thres
+    double threshValue;
+
+private:
+    Ui::SelThreshDlg *ui;
+};
+
+#endif // SELTHRESHDLG_H
