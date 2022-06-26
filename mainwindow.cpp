@@ -4,4 +4,13 @@
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
-    s
+    strPathQssFile(":/QSS/QSS/StyleSheet.qss"),
+    clrBKApp(QColor(205,215,230)),
+    processImg(NULL),
+    processCVImg(NULL)
+{
+    ui->setupUi(this);
+
+    CreateActions();
+    CreateMenus();
+  
