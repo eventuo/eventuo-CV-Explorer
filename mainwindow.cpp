@@ -13,4 +13,15 @@ MainWindow::MainWindow(QWidget *parent) :
 
     CreateActions();
     CreateMenus();
-  
+    ui->mainToolBar->hide();
+    InitMainWindow();
+    InitStatusBar();
+
+    BeautifyUI();
+}
+
+//创建菜单项
+void MainWindow::CreateActions()
+{
+    //“文件”
+    actionOpenImg = new QAction(tr("打开图像"),this);
