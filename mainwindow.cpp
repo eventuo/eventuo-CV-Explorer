@@ -25,3 +25,7 @@ void MainWindow::CreateActions()
 {
     //“文件”
     actionOpenImg = new QAction(tr("打开图像"),this);
+    connect(actionOpenImg,SIGNAL(triggered(bool)),this,SLOT(slotOpenImgSrc()));
+
+    actionSaveImgSrc = new QAction(tr("保存原始图像..."),this);
+    connect(actionSaveImgSrc,S
