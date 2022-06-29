@@ -28,4 +28,7 @@ void MainWindow::CreateActions()
     connect(actionOpenImg,SIGNAL(triggered(bool)),this,SLOT(slotOpenImgSrc()));
 
     actionSaveImgSrc = new QAction(tr("保存原始图像..."),this);
-    connect(actionSaveImgSrc,S
+    connect(actionSaveImgSrc,SIGNAL(triggered(bool)),this,SLOT(slotSaveImgSrc()));
+
+    actionSaveImgDst = new QAction(tr("保存目标图像..."),this);
+    connect(actionSaveImgDst,SIGNAL(triggered(bool))
