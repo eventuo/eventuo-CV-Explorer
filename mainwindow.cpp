@@ -31,4 +31,10 @@ void MainWindow::CreateActions()
     connect(actionSaveImgSrc,SIGNAL(triggered(bool)),this,SLOT(slotSaveImgSrc()));
 
     actionSaveImgDst = new QAction(tr("保存目标图像..."),this);
-    connect(actionSaveImgDst,SIGNAL(triggered(bool))
+    connect(actionSaveImgDst,SIGNAL(triggered(bool)),this,SLOT(slotSaveImgDst()));
+
+    actionSwapImg = new QAction(tr("原始目标图像对调"),this);
+    connect(actionSwapImg,SIGNAL(triggered(bool)),this,SLOT(slotSwapImg()));
+
+    //设备
+    a
