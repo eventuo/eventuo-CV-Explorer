@@ -37,4 +37,7 @@ void MainWindow::CreateActions()
     connect(actionSwapImg,SIGNAL(triggered(bool)),this,SLOT(slotSwapImg()));
 
     //设备
-    a
+    actionOpenCamera = new QAction(tr("打开摄像头"),this);
+    connect(actionOpenCamera,SIGNAL(triggered(bool)),this,SLOT(slotOpenCamera()));
+
+    actionCloseCamera = new QAction(tr("关
