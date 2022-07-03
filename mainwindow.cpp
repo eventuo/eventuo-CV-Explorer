@@ -45,4 +45,9 @@ void MainWindow::CreateActions()
 
     //“点运算”
     actionGray = new QAction(tr("图像灰度化"),this);
-    connect(actionGray,SIGNAL(triggered(bool)),this
+    connect(actionGray,SIGNAL(triggered(bool)),this,SLOT(slotGrayImg()));
+
+    actionHist = new QAction(tr("灰度直方图..."),this);
+    connect(actionHist,SIGNAL(triggered(bool)),this,SLOT(slotHistogram()));
+
+    actionHistEqualize = new 
