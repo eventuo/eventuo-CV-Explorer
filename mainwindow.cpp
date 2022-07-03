@@ -40,4 +40,9 @@ void MainWindow::CreateActions()
     actionOpenCamera = new QAction(tr("打开摄像头"),this);
     connect(actionOpenCamera,SIGNAL(triggered(bool)),this,SLOT(slotOpenCamera()));
 
-    actionCloseCamera = new QAction(tr("关
+    actionCloseCamera = new QAction(tr("关闭摄像头"),this);
+    connect(actionCloseCamera,SIGNAL(triggered(bool)),this,SLOT(slotCloseCamera()));
+
+    //“点运算”
+    actionGray = new QAction(tr("图像灰度化"),this);
+    connect(actionGray,SIGNAL(triggered(bool)),this
