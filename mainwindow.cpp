@@ -50,4 +50,8 @@ void MainWindow::CreateActions()
     actionHist = new QAction(tr("灰度直方图..."),this);
     connect(actionHist,SIGNAL(triggered(bool)),this,SLOT(slotHistogram()));
 
-    actionHistEqualize = new 
+    actionHistEqualize = new QAction(tr("直方图均衡化"),this);
+    connect(actionHistEqualize,SIGNAL(triggered(bool)),this,SLOT(slotHistEqualize()));
+
+    actionThresholdImg = new QAction(tr("二值化图像..."),this);
+    connect(actionThres
