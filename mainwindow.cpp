@@ -57,4 +57,10 @@ void MainWindow::CreateActions()
     connect(actionThresholdImg,SIGNAL(triggered(bool)),this,SLOT(slotThresholdImg()));
 
     actionColorReduce = new QAction(tr("图像减色..."),this);
-    connect(actionColorReduce,SIGNAL(triggered(bool
+    connect(actionColorReduce,SIGNAL(triggered(bool)),this,SLOT(slotColorReduce()));
+
+    actionSaltImage = new QAction(tr("椒盐噪点"),this);
+    connect(actionSaltImage,SIGNAL(triggered(bool)),this,SLOT(slotSaltImage()));
+
+    //"图像变换"
+    actionFlip =
