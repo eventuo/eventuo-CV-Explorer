@@ -54,4 +54,7 @@ void MainWindow::CreateActions()
     connect(actionHistEqualize,SIGNAL(triggered(bool)),this,SLOT(slotHistEqualize()));
 
     actionThresholdImg = new QAction(tr("二值化图像..."),this);
-    connect(actionThres
+    connect(actionThresholdImg,SIGNAL(triggered(bool)),this,SLOT(slotThresholdImg()));
+
+    actionColorReduce = new QAction(tr("图像减色..."),this);
+    connect(actionColorReduce,SIGNAL(triggered(bool
