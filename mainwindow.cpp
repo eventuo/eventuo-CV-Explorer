@@ -63,4 +63,8 @@ void MainWindow::CreateActions()
     connect(actionSaltImage,SIGNAL(triggered(bool)),this,SLOT(slotSaltImage()));
 
     //"图像变换"
-    actionFlip =
+    actionFlip = new QAction(tr("图像反转..."),this);
+    connect(actionFlip,SIGNAL(triggered(bool)),this,SLOT(slotFlipImg()));
+
+    //"图像滤波"
+    actionFilter2D = new QAction(tr("
