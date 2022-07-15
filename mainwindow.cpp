@@ -72,4 +72,12 @@ void MainWindow::CreateActions()
 
     //"目标检测"
     actionSkinDetect = new QAction(tr("肤色检测"),this);
-    connect(actionSkinDetec
+    connect(actionSkinDetect,SIGNAL(triggered(bool)),this,SLOT(slotDetectSkin()));
+}
+
+//创建菜单，添加菜单项
+void MainWindow::CreateMenus()
+{
+    menuFile = ui->menuBar->addMenu(tr("文件"));
+    menuFile->addAction(actionOpenImg);
+   
