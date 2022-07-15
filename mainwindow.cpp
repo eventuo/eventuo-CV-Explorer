@@ -67,4 +67,9 @@ void MainWindow::CreateActions()
     connect(actionFlip,SIGNAL(triggered(bool)),this,SLOT(slotFlipImg()));
 
     //"图像滤波"
-    actionFilter2D = new QAction(tr("
+    actionFilter2D = new QAction(tr("Filter2D..."),this);
+    connect(actionFilter2D,SIGNAL(triggered(bool)),this,SLOT(slotFilter2D()));
+
+    //"目标检测"
+    actionSkinDetect = new QAction(tr("肤色检测"),this);
+    connect(actionSkinDetec
