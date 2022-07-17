@@ -80,4 +80,10 @@ void MainWindow::CreateMenus()
 {
     menuFile = ui->menuBar->addMenu(tr("文件"));
     menuFile->addAction(actionOpenImg);
-   
+    menuFile->addSeparator();
+    menuFile->addAction(actionSaveImgSrc);
+    menuFile->addAction(actionSaveImgDst);
+    menuFile->addSeparator();
+    menuFile->addAction(actionSwapImg);
+
+    
