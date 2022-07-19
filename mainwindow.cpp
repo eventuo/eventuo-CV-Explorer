@@ -86,4 +86,8 @@ void MainWindow::CreateMenus()
     menuFile->addSeparator();
     menuFile->addAction(actionSwapImg);
 
-    
+    menuDevices = ui->menuBar->addMenu(tr("设备"));
+    menuDevices->addAction(actionOpenCamera);
+    menuDevices->addAction(actionCloseCamera);
+
+    menuPointOperate = ui->menuBar->addMenu(tr("点运算")
