@@ -95,4 +95,9 @@ void MainWindow::CreateMenus()
     menuPointOperate->addSeparator();
     menuPointOperate->addAction(actionHist);
     menuPointOperate->addAction(actionHistEqualize);
-    menuPointOperate->add
+    menuPointOperate->addAction(actionThresholdImg);
+    menuPointOperate->addSeparator();
+    menuPointOperate->addAction(actionColorReduce);
+    menuPointOperate->addAction(actionSaltImage);
+
+    menuTransformImg = ui->menu
