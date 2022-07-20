@@ -90,4 +90,9 @@ void MainWindow::CreateMenus()
     menuDevices->addAction(actionOpenCamera);
     menuDevices->addAction(actionCloseCamera);
 
-    menuPointOperate = ui->menuBar->addMenu(tr("点运算")
+    menuPointOperate = ui->menuBar->addMenu(tr("点运算"));
+    menuPointOperate->addAction(actionGray);
+    menuPointOperate->addSeparator();
+    menuPointOperate->addAction(actionHist);
+    menuPointOperate->addAction(actionHistEqualize);
+    menuPointOperate->add
