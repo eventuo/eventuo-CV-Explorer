@@ -100,4 +100,10 @@ void MainWindow::CreateMenus()
     menuPointOperate->addAction(actionColorReduce);
     menuPointOperate->addAction(actionSaltImage);
 
-    menuTransformImg = ui->menu
+    menuTransformImg = ui->menuBar->addMenu(tr("图像变换"));
+    menuTransformImg->addAction(actionFlip);
+
+    menuFilterImg = ui->menuBar->addMenu(tr("图像滤波"));
+    menuFilterImg->addAction(actionFilter2D);
+
+    menuDe
