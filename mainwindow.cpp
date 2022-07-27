@@ -106,4 +106,12 @@ void MainWindow::CreateMenus()
     menuFilterImg = ui->menuBar->addMenu(tr("图像滤波"));
     menuFilterImg->addAction(actionFilter2D);
 
-    menuDe
+    menuDetect = ui->menuBar->addMenu(tr("目标检测"));
+    menuDetect->addAction(actionSkinDetect);
+}
+
+//初始化主窗口布局
+void MainWindow::InitMainWindow()
+{
+    //原图像和目标图像标题显示区域定义
+    labelSrcImgTitle 
