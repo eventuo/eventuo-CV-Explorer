@@ -116,4 +116,8 @@ void MainWindow::InitMainWindow()
     //原图像和目标图像标题显示区域定义
     labelSrcImgTitle = new QLabel(tr("Source Image Title"));
     labelDstImgTitle = new QLabel(tr("Destination Image Title"));
-    labelSrcImgTitle->setObjectName(tr("objLabelSrcImgTitle
+    labelSrcImgTitle->setObjectName(tr("objLabelSrcImgTitle"));
+    labelDstImgTitle->setObjectName(tr("objLabelDstImgTitle"));
+    labelSrcImgTitle->setAlignment(Qt::AlignCenter);
+    labelDstImgTitle->setAlignment(Qt::AlignCenter);
+   
