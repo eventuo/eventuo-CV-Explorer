@@ -124,4 +124,8 @@ void MainWindow::InitMainWindow()
     labelDstImgTitle->setFrameShape(QFrame::Box);
     //原图像和目标图像显示区域定义
     labelSrcImg = new QLabel(tr("Source Image"));
-    labelDstImg = new Q
+    labelDstImg = new QLabel(tr("Destination Image"));
+    labelSrcImg->setObjectName(tr("objLabelSrcImg"));
+    labelDstImg->setObjectName(tr("objLabelDstImg"));
+    labelSrcImg->setAlignment(Qt::AlignCenter);
+    labelDstImg->
