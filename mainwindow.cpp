@@ -128,4 +128,8 @@ void MainWindow::InitMainWindow()
     labelSrcImg->setObjectName(tr("objLabelSrcImg"));
     labelDstImg->setObjectName(tr("objLabelDstImg"));
     labelSrcImg->setAlignment(Qt::AlignCenter);
-    labelDstImg->
+    labelDstImg->setAlignment(Qt::AlignCenter);
+    labelSrcImg->setFrameShape(QFrame::Box);
+    labelDstImg->setFrameShape(QFrame::Box);
+    //原图像和目标图像信息显示区域定义
+    labelSrcImgInfos = new QLabel(tr("Source I
