@@ -132,4 +132,7 @@ void MainWindow::InitMainWindow()
     labelSrcImg->setFrameShape(QFrame::Box);
     labelDstImg->setFrameShape(QFrame::Box);
     //原图像和目标图像信息显示区域定义
-    labelSrcImgInfos = new QLabel(tr("Source I
+    labelSrcImgInfos = new QLabel(tr("Source Image Infos"));
+    labelDstImgInfos = new QLabel(tr("Destination Image Infos"));
+    labelSrcImgInfos->setObjectName(tr("objLabelSrcImgInfos"));
+    labelDstImgInfos->setObjectName(t
