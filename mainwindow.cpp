@@ -135,4 +135,7 @@ void MainWindow::InitMainWindow()
     labelSrcImgInfos = new QLabel(tr("Source Image Infos"));
     labelDstImgInfos = new QLabel(tr("Destination Image Infos"));
     labelSrcImgInfos->setObjectName(tr("objLabelSrcImgInfos"));
-    labelDstImgInfos->setObjectName(t
+    labelDstImgInfos->setObjectName(tr("objLabelDstImgInfos"));
+    labelSrcImgInfos->setAlignment(Qt::AlignCenter);
+    labelDstImgInfos->setAlignment(Qt::AlignCenter);
+    labelSrcImgInfos->setFrameShape(QFrame::Box);
