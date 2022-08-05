@@ -139,3 +139,9 @@ void MainWindow::InitMainWindow()
     labelSrcImgInfos->setAlignment(Qt::AlignCenter);
     labelDstImgInfos->setAlignment(Qt::AlignCenter);
     labelSrcImgInfos->setFrameShape(QFrame::Box);
+    labelDstImgInfos->setFrameShape(QFrame::Box);
+
+    //主窗口控件布局
+    layoutGrid = new QGridLayout();
+    layoutGrid->addWidget(labelSrcImgTitle,0,0,1,1);
+  
