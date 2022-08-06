@@ -144,4 +144,7 @@ void MainWindow::InitMainWindow()
     //主窗口控件布局
     layoutGrid = new QGridLayout();
     layoutGrid->addWidget(labelSrcImgTitle,0,0,1,1);
-  
+    layoutGrid->addWidget(labelDstImgTitle,0,1,1,1);
+    layoutGrid->addWidget(labelSrcImg,1,0,10,1);
+    layoutGrid->addWidget(labelDstImg,1,1,10,1);
+    layoutGrid->addWidget(labelSrcImgInfos,
