@@ -153,4 +153,11 @@ void MainWindow::InitMainWindow()
     layoutGrid->setColumnStretch(1,1);
 
     widgetMain = new QWidget();
-    this->setCentralWidget(
+    this->setCentralWidget(widgetMain);
+    widgetMain->setLayout(layoutGrid);
+}
+
+void MainWindow::InitStatusBar()
+{
+    labelSrcImgPath = new QLabel(tr("Source Image Path"));
+    ui->statusBar->addWidget(labelSrcIm
