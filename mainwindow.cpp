@@ -147,4 +147,10 @@ void MainWindow::InitMainWindow()
     layoutGrid->addWidget(labelDstImgTitle,0,1,1,1);
     layoutGrid->addWidget(labelSrcImg,1,0,10,1);
     layoutGrid->addWidget(labelDstImg,1,1,10,1);
-    layoutGrid->addWidget(labelSrcImgInfos,
+    layoutGrid->addWidget(labelSrcImgInfos,11,0,1,1);
+    layoutGrid->addWidget(labelDstImgInfos,11,1,1,1);
+    layoutGrid->setColumnStretch(0,1);
+    layoutGrid->setColumnStretch(1,1);
+
+    widgetMain = new QWidget();
+    this->setCentralWidget(
