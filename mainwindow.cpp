@@ -160,4 +160,13 @@ void MainWindow::InitMainWindow()
 void MainWindow::InitStatusBar()
 {
     labelSrcImgPath = new QLabel(tr("Source Image Path"));
-    ui->statusBar->addWidget(labelSrcIm
+    ui->statusBar->addWidget(labelSrcImgPath);
+}
+
+void MainWindow::BeautifyUI()
+{
+    optImgFile.LoadQssFile(strPathQssFile,qApp);
+
+    //设置应用程序背景色
+    QPalette *paletteApp=new QPalette();
+    paletteApp->setColor(QPa
