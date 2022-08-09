@@ -169,4 +169,12 @@ void MainWindow::BeautifyUI()
 
     //设置应用程序背景色
     QPalette *paletteApp=new QPalette();
-    paletteApp->setColor(QPa
+    paletteApp->setColor(QPalette::Background,clrBKApp);
+    this->setPalette(*paletteApp);
+    delete paletteApp;
+}
+
+void MainWindow::slotOpenImgSrc()
+{
+    QFileInfo fileImage;
+    int ret = optImgFile.OpenIma
