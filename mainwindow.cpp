@@ -185,4 +185,11 @@ void MainWindow::slotOpenImgSrc()
         dirSrcImg  = fileImage.absolutePath();
 
         //读取并显示源图像
-        imgSrc = pr
+        imgSrc = procCVImg.ReadImage(pathSrcImg);
+        if(imgSrc.data)
+        {
+            DisplayImage(imgSrc,0);
+        }
+        else
+        {
+            QMessageBox::critical(
