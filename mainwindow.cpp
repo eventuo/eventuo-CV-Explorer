@@ -177,4 +177,12 @@ void MainWindow::BeautifyUI()
 void MainWindow::slotOpenImgSrc()
 {
     QFileInfo fileImage;
-    int ret = optImgFile.OpenIma
+    int ret = optImgFile.OpenImage(fileImage);
+    if(ret == 0)
+    {
+        nameSrcImg = fileImage.fileName();
+        pathSrcImg = fileImage.filePath();
+        dirSrcImg  = fileImage.absolutePath();
+
+        //读取并显示源图像
+        imgSrc = pr
