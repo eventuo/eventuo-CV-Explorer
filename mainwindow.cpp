@@ -192,4 +192,13 @@ void MainWindow::slotOpenImgSrc()
         }
         else
         {
-            QMessageBox::critical(
+            QMessageBox::critical(this,tr("图像错误"),tr("读取图像失败！"),
+                                 QMessageBox::Yes);
+            return;
+        }
+    }
+}
+
+void MainWindow::slotSaveImgSrc()
+{
+    int ret =
