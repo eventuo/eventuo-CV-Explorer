@@ -201,4 +201,10 @@ void MainWindow::slotOpenImgSrc()
 
 void MainWindow::slotSaveImgSrc()
 {
-    int ret =
+    int ret = optImgFile.SaveImage(imgSrc);
+    if(ret == 0)
+    {
+        QMessageBox::information(this,
+                                 tr("保存成功"),
+                                 tr("保存原始图像成功"),
+ 
