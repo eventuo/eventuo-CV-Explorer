@@ -207,4 +207,11 @@ void MainWindow::slotSaveImgSrc()
         QMessageBox::information(this,
                                  tr("保存成功"),
                                  tr("保存原始图像成功"),
- 
+                                 QMessageBox::Yes);
+    }
+    else if(ret == -1)
+    {
+        QMessageBox::critical(this,
+                              tr("图像错误"),
+                              tr("原始图像不存在"),
+      
