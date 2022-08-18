@@ -224,4 +224,10 @@ void MainWindow::slotSaveImgDst()
     if(ret == 0)
     {
         QMessageBox::information(this,
-  
+                                 tr("保存成功"),
+                                 tr("保存目标图像成功"),
+                                 QMessageBox::Yes);
+    }
+    else if(ret == -1)
+    {
+        QMessageBox::
