@@ -214,4 +214,14 @@ void MainWindow::slotSaveImgSrc()
         QMessageBox::critical(this,
                               tr("图像错误"),
                               tr("原始图像不存在"),
-      
+                              QMessageBox::Yes);
+    }
+}
+
+void MainWindow::slotSaveImgDst()
+{
+    int ret = optImgFile.SaveImage(imgDst);
+    if(ret == 0)
+    {
+        QMessageBox::information(this,
+  
