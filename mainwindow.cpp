@@ -230,4 +230,13 @@ void MainWindow::slotSaveImgDst()
     }
     else if(ret == -1)
     {
-        QMessageBox::
+        QMessageBox::critical(this,
+                              tr("图像错误"),
+                              tr("目标图像不存在"),
+                              QMessageBox::Yes);
+    }
+}
+
+void MainWindow::slotSwapImg()
+{
+    if(img
