@@ -239,4 +239,9 @@ void MainWindow::slotSaveImgDst()
 
 void MainWindow::slotSwapImg()
 {
-    if(img
+    if(imgSrc.empty() || imgDst.empty())
+    {
+        QMessageBox::critical(this,
+                              tr("图像错误"),
+                              tr("原始图像或目标图像不存在！"),
+                              QMessageBo
