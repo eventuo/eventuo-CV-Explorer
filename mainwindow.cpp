@@ -244,4 +244,15 @@ void MainWindow::slotSwapImg()
         QMessageBox::critical(this,
                               tr("图像错误"),
                               tr("原始图像或目标图像不存在！"),
-                              QMessageBo
+                              QMessageBox::Yes);
+        return;
+    }
+    cv::Mat imgTemp = imgSrc;
+    imgSrc = imgDst;
+    imgDst = imgTemp;
+
+    DisplayImage(imgSrc,0);
+    DisplayImage(imgDst,1);
+}
+
+void MainWindow:
