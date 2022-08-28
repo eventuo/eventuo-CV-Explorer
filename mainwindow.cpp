@@ -255,4 +255,14 @@ void MainWindow::slotSwapImg()
     DisplayImage(imgDst,1);
 }
 
-void MainWindow:
+void MainWindow::slotOpenCamera()
+{
+    if(captureVideo.isOpened()){
+        captureVideo.release();
+    }
+
+    captureVideo.open(0);
+
+    if(captureVideo.isOpened())
+    {
+        double nFrameRate = captureVideo.get(CV_C
