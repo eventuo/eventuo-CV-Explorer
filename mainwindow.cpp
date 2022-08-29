@@ -265,4 +265,9 @@ void MainWindow::slotOpenCamera()
 
     if(captureVideo.isOpened())
     {
-        double nFrameRate = captureVideo.get(CV_C
+        double nFrameRate = captureVideo.get(CV_CAP_PROP_FPS);
+        if(nFrameRate < 0)
+            nFrameRate = 25;
+        timerCaptureVideo = new QTimer(this);
+        timerCaptureVideo->setInterval(1000./nFrameRate);
+        connect(timerCaptureV
