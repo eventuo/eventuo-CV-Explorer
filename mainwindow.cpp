@@ -270,4 +270,6 @@ void MainWindow::slotOpenCamera()
             nFrameRate = 25;
         timerCaptureVideo = new QTimer(this);
         timerCaptureVideo->setInterval(1000./nFrameRate);
-        connect(timerCaptureV
+        connect(timerCaptureVideo, SIGNAL(timeout()), this, SLOT(CaptureFrame()));
+
+        imgSrc = cv::Mat::zeros(captureVideo.get(CV_CAP_PROP_FRAME_HEIGHT), captureVideo.get(CV_CAP_PROP_FRAME_WIDTH), CV_8UC3
