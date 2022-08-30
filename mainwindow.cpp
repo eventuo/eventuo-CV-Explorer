@@ -272,4 +272,17 @@ void MainWindow::slotOpenCamera()
         timerCaptureVideo->setInterval(1000./nFrameRate);
         connect(timerCaptureVideo, SIGNAL(timeout()), this, SLOT(CaptureFrame()));
 
-        imgSrc = cv::Mat::zeros(captureVideo.get(CV_CAP_PROP_FRAME_HEIGHT), captureVideo.get(CV_CAP_PROP_FRAME_WIDTH), CV_8UC3
+        imgSrc = cv::Mat::zeros(captureVideo.get(CV_CAP_PROP_FRAME_HEIGHT), captureVideo.get(CV_CAP_PROP_FRAME_WIDTH), CV_8UC3);
+
+        captureVideo>>imgSrc;
+
+        if(!imgSrc.empty())
+        {
+            DisplayImage(imgSrc,0);
+        }
+
+        timerCaptureVideo->start();
+    }
+}
+
+void MainWindow::slotCloseCame
