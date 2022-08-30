@@ -285,4 +285,18 @@ void MainWindow::slotOpenCamera()
     }
 }
 
-void MainWindow::slotCloseCame
+void MainWindow::slotCloseCamera()
+{
+    if(timerCaptureVideo->isActive())
+    {
+        timerCaptureVideo->stop();
+    }
+
+    if(captureVideo.isOpened()){
+        captureVideo.release();
+    }
+}
+
+void MainWindow::CaptureFrame()
+{
+    captu
