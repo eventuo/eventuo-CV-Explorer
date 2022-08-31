@@ -306,4 +306,11 @@ void MainWindow::CaptureFrame()
 
         switch (typeFunPointer) {
         case FUN_POINTER_TYPE::STATIC_GLOBAL:
-            if(processImg ==
+            if(processImg == NULL)
+                return;
+            imgDst = processImg(imgSrc);
+            break;
+        case FUN_POINTER_TYPE::CVIMGPROC:
+            if(processCVImg == NULL)
+                return;
+   
