@@ -299,4 +299,11 @@ void MainWindow::slotCloseCamera()
 
 void MainWindow::CaptureFrame()
 {
-    captu
+    captureVideo>>imgSrc;
+    if(!imgSrc.empty())
+    {
+        DisplayImage(imgSrc,0);
+
+        switch (typeFunPointer) {
+        case FUN_POINTER_TYPE::STATIC_GLOBAL:
+            if(processImg ==
