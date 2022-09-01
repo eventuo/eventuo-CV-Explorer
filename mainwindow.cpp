@@ -325,4 +325,16 @@ void MainWindow::CaptureFrame()
 
 void MainWindow::slotGrayImg()
 {
-    if(!
+    if(!CheckSrcImage())
+        return;
+
+    imgDst = procCVImg.CvtToGrayImg(imgSrc);
+    DisplayImage(imgDst,1);
+}
+
+void MainWindow::slotHistogram()
+{
+    if(!CheckSrcImage())
+        return;
+
+ 
