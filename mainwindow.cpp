@@ -313,4 +313,16 @@ void MainWindow::CaptureFrame()
         case FUN_POINTER_TYPE::CVIMGPROC:
             if(processCVImg == NULL)
                 return;
-   
+            imgDst = (procCVImg.*processCVImg)(imgSrc);
+            break;
+        default:
+            break;
+        }
+
+        DisplayImage(imgDst,1);
+    }
+}
+
+void MainWindow::slotGrayImg()
+{
+    if(!
