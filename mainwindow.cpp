@@ -337,4 +337,9 @@ void MainWindow::slotHistogram()
     if(!CheckSrcImage())
         return;
 
- 
+    if(captureVideo.isOpened()){
+        processCVImg = &CVImgProc::GetHistgramImg;
+        typeFunPointer = FUN_POINTER_TYPE::CVIMGPROC;
+        return;
+    }
+
