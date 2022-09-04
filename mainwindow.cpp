@@ -347,4 +347,12 @@ void MainWindow::slotHistogram()
     DisplayImage(imgDst,1);
 
 //    SelChannelDlg *dlgSelChannel = new SelChannelDlg(NULL,imgSrc.channels());
-//    if(dlgSelChannel->exec() ==
+//    if(dlgSelChannel->exec() == QDialog::Accepted)
+//    {
+//        imgDst = procCVImg.GetHistgramImg(imgSrc,dlgSelChannel->indexChannel);
+//        DisplayImage(imgDst,1);
+//    }
+//    delete dlgSelChannel;
+}
+
+void MainWi
