@@ -343,3 +343,8 @@ void MainWindow::slotHistogram()
         return;
     }
 
+    imgDst = procCVImg.GetHistgramImg(imgSrc);
+    DisplayImage(imgDst,1);
+
+//    SelChannelDlg *dlgSelChannel = new SelChannelDlg(NULL,imgSrc.channels());
+//    if(dlgSelChannel->exec() ==
