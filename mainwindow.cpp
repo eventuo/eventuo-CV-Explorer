@@ -355,4 +355,10 @@ void MainWindow::slotHistogram()
 //    delete dlgSelChannel;
 }
 
-void MainWi
+void MainWindow::slotHistEqualize()
+{
+    if(!CheckSrcImage())
+        return;
+    cv::Mat imgGray = procCVImg.CvtToGrayImg(imgSrc);
+    imgDst = procCVImg.EqualizeImgHist(imgGray);
+    Display
