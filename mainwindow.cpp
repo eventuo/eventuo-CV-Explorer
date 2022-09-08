@@ -361,4 +361,15 @@ void MainWindow::slotHistEqualize()
         return;
     cv::Mat imgGray = procCVImg.CvtToGrayImg(imgSrc);
     imgDst = procCVImg.EqualizeImgHist(imgGray);
-    Display
+    DisplayImage(imgDst,1);
+}
+
+void MainWindow::slotThresholdImg()
+{
+    if(!CheckSrcImage())
+        return;
+
+    SelThreshDlg dlgSelThresh;
+    if(dlgSelThresh.exec() == QDialog::Accepted)
+    {
+   
