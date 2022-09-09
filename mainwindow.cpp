@@ -378,4 +378,10 @@ void MainWindow::slotThresholdImg()
     }
 }
 
-vo
+void MainWindow::slotColorReduce()
+{
+    if(!CheckSrcImage())
+        return;
+    SelColorReduceDivDlg dlgColorReduce;
+    dlgColorReduce.show();
+    if(dlgColorReduce.exec() == QDialog::Acc
