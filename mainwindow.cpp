@@ -384,4 +384,13 @@ void MainWindow::slotColorReduce()
         return;
     SelColorReduceDivDlg dlgColorReduce;
     dlgColorReduce.show();
-    if(dlgColorReduce.exec() == QDialog::Acc
+    if(dlgColorReduce.exec() == QDialog::Accepted)
+    {
+        imgDst = procCVImg.colorReduce(imgSrc,dlgColorReduce.divColorReduce);
+        DisplayImage(imgDst,1);
+    }
+}
+
+void MainWindow::slotSaltImage()
+{
+    if(!CheckSrcImage())
