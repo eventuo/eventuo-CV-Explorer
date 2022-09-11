@@ -394,3 +394,14 @@ void MainWindow::slotColorReduce()
 void MainWindow::slotSaltImage()
 {
     if(!CheckSrcImage())
+        return;
+    imgDst = procCVImg.SaltImage(imgSrc);
+    DisplayImage(imgDst,1);
+}
+
+void MainWindow::slotFlipImg()
+{
+    if(!CheckSrcImage())
+        return;
+
+    SelFlipTypeDlg dlgSelFlipType;
