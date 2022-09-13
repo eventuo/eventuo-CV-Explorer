@@ -405,3 +405,9 @@ void MainWindow::slotFlipImg()
         return;
 
     SelFlipTypeDlg dlgSelFlipType;
+    if(dlgSelFlipType.exec() == QDialog::Accepted)
+    {
+        enum FlipType{Horizon=0,Vertical,HV}typeFlip;
+        typeFlip = FlipType(dlgSelFlipType.typeFlip);
+        switch(typeFlip)
+       
