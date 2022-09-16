@@ -416,4 +416,17 @@ void MainWindow::slotFlipImg()
             break;
         case Vertical:
             imgDst = procCVImg.FlipImg(imgSrc,0);
-            break
+            break;
+        case HV:
+            imgDst = procCVImg.FlipImg(imgSrc,-1);
+            break;
+        }
+        DisplayImage(imgDst,1);
+    }
+}
+
+void MainWindow::slotFilter2D()
+{
+    if(!CheckSrcImage())
+        return;
+  
