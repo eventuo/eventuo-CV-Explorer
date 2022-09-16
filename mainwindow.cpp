@@ -410,4 +410,10 @@ void MainWindow::slotFlipImg()
         enum FlipType{Horizon=0,Vertical,HV}typeFlip;
         typeFlip = FlipType(dlgSelFlipType.typeFlip);
         switch(typeFlip)
-       
+        {
+        case Horizon:
+            imgDst = procCVImg.FlipImg(imgSrc,1);
+            break;
+        case Vertical:
+            imgDst = procCVImg.FlipImg(imgSrc,0);
+            break
