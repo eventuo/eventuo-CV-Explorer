@@ -429,4 +429,13 @@ void MainWindow::slotFilter2D()
 {
     if(!CheckSrcImage())
         return;
-  
+    imgDst = procCVImg.Filter2DImg(procCVImg.CvtToGrayImg(imgSrc));
+    DisplayImage(imgDst,1);
+}
+
+void MainWindow::slotDetectSkin()
+{
+    if(!CheckSrcImage())
+        return;
+
+    if(c
