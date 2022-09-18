@@ -438,4 +438,10 @@ void MainWindow::slotDetectSkin()
     if(!CheckSrcImage())
         return;
 
-    if(c
+    if(captureVideo.isOpened()){
+        processImg = SkinDetector::GetSkin_RGBHCbCr;
+        typeFunPointer = FUN_POINTER_TYPE::STATIC_GLOBAL;
+        return;
+    }
+
+    imgDst = SkinDe
