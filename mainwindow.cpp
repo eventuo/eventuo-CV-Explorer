@@ -453,4 +453,9 @@ bool MainWindow::CheckSrcImage()
     if(imgSrc.empty())
     {
         QMessageBox::critical(this,
-     
+                              tr("图像错误"),
+                              tr("原始图像不存在"),
+                              QMessageBox::Yes);
+        return false;
+    }
+    else
