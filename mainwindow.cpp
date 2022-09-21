@@ -444,4 +444,13 @@ void MainWindow::slotDetectSkin()
         return;
     }
 
-    imgDst = SkinDe
+    imgDst = SkinDetector::GetSkin_RGBHCbCr(imgSrc);
+    DisplayImage(imgDst,1);
+}
+
+bool MainWindow::CheckSrcImage()
+{
+    if(imgSrc.empty())
+    {
+        QMessageBox::critical(this,
+     
