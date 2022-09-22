@@ -459,3 +459,13 @@ bool MainWindow::CheckSrcImage()
         return false;
     }
     else
+    {
+        return true;
+    }
+}
+
+void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
+{
+    //不能使用image=matImage，会影响matImage，进而影响ingSRC
+    cv::Mat image;
+    m
