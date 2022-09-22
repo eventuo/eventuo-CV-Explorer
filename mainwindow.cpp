@@ -468,4 +468,11 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
 {
     //不能使用image=matImage，会影响matImage，进而影响ingSRC
     cv::Mat image;
-    m
+    matImage.copyTo(image);//创建新的拷贝
+
+    QLabel *labelImage;
+    QLabel *labelImageInfos;
+
+    int W_Img = image.cols;
+    int H_Img = image.rows;
+    int N_Channels = imag
