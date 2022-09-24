@@ -475,4 +475,12 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
 
     int W_Img = image.cols;
     int H_Img = image.rows;
-    int N_Channels = imag
+    int N_Channels = image.channels();
+
+    if(SrcOrDst==0)
+    {
+        labelSrcImgTitle->setText(tr("源图像"));
+        labelImage = labelSrcImg;
+        labelImageInfos = labelSrcImgInfos;
+
+        label
