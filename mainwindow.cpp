@@ -483,4 +483,10 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
         labelImage = labelSrcImg;
         labelImageInfos = labelSrcImgInfos;
 
-        label
+        labelSrcImgPath->setText(tr("原始图像路径：")+pathSrcImg);
+    }
+    else
+    {
+        labelDstImgTitle->setText(tr("目标图像"));
+        labelImage = labelDstImg;
+        labelImageInfos = 
