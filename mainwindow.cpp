@@ -489,4 +489,12 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
     {
         labelDstImgTitle->setText(tr("目标图像"));
         labelImage = labelDstImg;
-        labelImageInfos = 
+        labelImageInfos = labelDstImgInfos;
+    }
+
+    int W_LabelImg = labelImage->width();
+    int H_LabelImg = labelImage->height();
+
+    //显示图像信息
+    labelImageInfos->setText(tr("宽度：")
+                             + 
