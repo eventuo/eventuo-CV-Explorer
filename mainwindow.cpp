@@ -497,4 +497,8 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
 
     //显示图像信息
     labelImageInfos->setText(tr("宽度：")
-                             + 
+                             + QString::number(W_Img)
+                             + tr("，高度：")
+                             + QString::number(H_Img)
+                             + tr("，通道数：")
+                             + QString::number(N_Chan
