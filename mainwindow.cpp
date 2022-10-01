@@ -501,4 +501,12 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
                              + tr("，高度：")
                              + QString::number(H_Img)
                              + tr("，通道数：")
-                             + QString::number(N_Chan
+                             + QString::number(N_Channels));
+
+    //根据显示图像的label大小改变图像尺寸
+    if(W_Img>W_LabelImg && H_Img<=H_LabelImg)
+    {
+        cv::resize(image,image,
+                   cv::Size(W_LabelImg,H_Img/((float)W_Img/W_LabelImg)));
+    }
+ 
