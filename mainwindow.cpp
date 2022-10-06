@@ -527,4 +527,9 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
             {
                 if(W_Img/(float)H_Img >= W_LabelImg/(float)H_LabelImg)
                 {
-                    cv::
+                    cv::resize(image,image,
+                               cv::Size(W_LabelImg,H_Img/((float)W_Img/W_LabelImg)));
+                }
+                else
+                {
+     
