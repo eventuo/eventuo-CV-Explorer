@@ -532,4 +532,8 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
                 }
                 else
                 {
+                    cv::resize(image,image,
+                               cv::Size(W_Img/((float)H_Img/H_LabelImg),H_LabelImg));
+                }
+            }
      
