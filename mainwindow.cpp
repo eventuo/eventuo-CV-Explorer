@@ -554,4 +554,12 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
                 else
                 {
                     cv::resize(image,image,
-                               cv::Size(W_Im
+                               cv::Size(W_Img/((float)H_Img/H_LabelImg),H_LabelImg));
+                }
+            }
+        }
+    }
+    QImage qImg;
+    if(image.type() == CV_8UC3)
+    {
+        cv::cvtColor(image,image,CV_BG
