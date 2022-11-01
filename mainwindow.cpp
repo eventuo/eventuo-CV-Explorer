@@ -562,4 +562,8 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
     QImage qImg;
     if(image.type() == CV_8UC3)
     {
-        cv::cvtColor(image,image,CV_BG
+        cv::cvtColor(image,image,CV_BGR2RGB);
+        qImg = QImage((const unsigned char*)(image.data),
+                      image.cols,image.rows,
+                      image.cols*image.channels(),
+                      QImage::Format_
