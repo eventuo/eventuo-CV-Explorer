@@ -566,4 +566,10 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
         qImg = QImage((const unsigned char*)(image.data),
                       image.cols,image.rows,
                       image.cols*image.channels(),
-                      QImage::Format_
+                      QImage::Format_RGB888);
+    }
+    if(image.type() == CV_8UC1)// 8-bits unsigned, NO. OF CHANNELS = 1
+    {
+        qImg = QImage(image.cols,
+                      image.rows,
+             
