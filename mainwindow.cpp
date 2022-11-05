@@ -572,4 +572,7 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
     {
         qImg = QImage(image.cols,
                       image.rows,
-             
+                      QImage::Format_Indexed8);
+        // Set the color table (used to translate colour indexes to qRgb values)
+        qImg.setColorCount(256);
+        for(i
