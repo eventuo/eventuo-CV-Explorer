@@ -575,4 +575,10 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
                       QImage::Format_Indexed8);
         // Set the color table (used to translate colour indexes to qRgb values)
         qImg.setColorCount(256);
-        for(i
+        for(int i = 0; i < 256; i++)
+        {
+            qImg.setColor(i, qRgb(i, i, i));
+        }
+        // Copy input image
+        uchar *pSrc = image.data;
+        for(int row = 0; row 
