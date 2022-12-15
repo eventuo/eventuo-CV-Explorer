@@ -581,4 +581,12 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
         }
         // Copy input image
         uchar *pSrc = image.data;
-        for(int row = 0; row 
+        for(int row = 0; row < image.rows; row ++)
+        {
+            uchar *pDest = qImg.scanLine(row);
+            memcpy(pDest, pSrc, image.cols);
+            pSrc += image.step;
+        }
+    }
+
+ 
