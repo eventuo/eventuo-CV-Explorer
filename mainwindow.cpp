@@ -589,4 +589,11 @@ void MainWindow::DisplayImage(cv::Mat matImage,int SrcOrDst)
         }
     }
 
- 
+    labelImage->setPixmap(QPixmap::fromImage(qImg));
+    //labelImage->resize(labelImage->pixmap()->size());
+}
+
+void MainWindow::resizeEvent(QResizeEvent *)
+{
+}
+
