@@ -597,3 +597,14 @@ void MainWindow::resizeEvent(QResizeEvent *)
 {
 }
 
+MainWindow::~MainWindow()
+{
+    delete ui;
+
+    delete menuFile;
+    delete actionOpenImg;
+    delete actionSaveImgSrc;
+    delete actionSaveImgDst;
+
+    delete menuPointOperate;
+    d
