@@ -607,4 +607,13 @@ MainWindow::~MainWindow()
     delete actionSaveImgDst;
 
     delete menuPointOperate;
-    d
+    delete actionGray;
+
+    delete labelSrcImgTitle;
+    delete labelSrcImg;
+    delete labelSrcImgInfos;
+    delete labelSrcImgPath;
+
+    delete labelDstImgTitle;
+    delete labelDstImg;
+ 
