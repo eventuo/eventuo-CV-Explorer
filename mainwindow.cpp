@@ -616,4 +616,8 @@ MainWindow::~MainWindow()
 
     delete labelDstImgTitle;
     delete labelDstImg;
- 
+    delete labelDstImgInfos;
+
+    delete layoutGrid;
+    delete widgetMain;
+}
