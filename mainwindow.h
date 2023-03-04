@@ -9,4 +9,13 @@
 #include "./SubWindow/SelThreshDlg.h"
 
 #include <QMainWindow>
-#
+#include <QMessageBox>
+#include <QWidget>
+#include <QGridLayout>
+#include <QLabel>
+
+#include <QResizeEvent>
+
+#include <QTimer>
+
+enum FUN_POINTER_TYPE{STATIC_GLOBAL, CVIMGPROC
