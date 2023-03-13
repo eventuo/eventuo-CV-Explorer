@@ -18,4 +18,15 @@
 
 #include <QTimer>
 
-enum FUN_POINTER_TYPE{STATIC_GLOBAL, CVIMGPROC
+enum FUN_POINTER_TYPE{STATIC_GLOBAL, CVIMGPROC, SKINDETECTOR};
+
+namespace Ui {
+class MainWindow;
+}
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit MainWindow(QWidget *paren
