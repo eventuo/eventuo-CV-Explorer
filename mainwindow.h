@@ -88,4 +88,12 @@ private:
     QString  dirDstImg;
 
 
-private
+private:
+    QMenu *menuFile;
+    QAction *actionOpenImg;
+    QAction *actionSaveImgSrc;
+    QAction *actionSaveImgDst;
+    QAction *actionSwapImg;
+
+    QMenu *menuDevices;
+    QAction *actionOpenCamer
