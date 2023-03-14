@@ -40,4 +40,12 @@ private:
     void CreateMenus();
     void InitMainWindow();
     void InitStatusBar();
+    void BeautifyUI();
+
+private:
+    bool CheckSrcImage();
+    void DisplayImage(cv::Mat matImage,int SrcOrDst);
+
+private slots:
+    void slotOpenImgSrc();//Open Source Image
     voi
