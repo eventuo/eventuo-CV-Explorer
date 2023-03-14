@@ -57,4 +57,11 @@ private slots:
 
     void slotGrayImg();//image gray processing
     void slotHistogram();//generate image of gray image histogram
-    void slotHistEqualize();//equ
+    void slotHistEqualize();//equalize the histogram of image
+    void slotThresholdImg();//
+    void slotColorReduce();//reduce the image color number
+    void slotSaltImage();
+
+    void slotFlipImg();//flip image:
+
+    void slotFilter2D
