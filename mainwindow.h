@@ -52,4 +52,9 @@ private slots:
     void slotSaveImgDst();//Save Destination Image
     void slotSwapImg();//Swap the Source Image and Destination Image
 
-    void slotOpenC
+    void slotOpenCamera();
+    void slotCloseCamera();
+
+    void slotGrayImg();//image gray processing
+    void slotHistogram();//generate image of gray image histogram
+    void slotHistEqualize();//equ
