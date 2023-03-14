@@ -29,4 +29,15 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *paren
+    explicit MainWindow(QWidget *parent = 0);
+    ~MainWindow();
+
+private:
+    Ui::MainWindow *ui;
+
+private:
+    void CreateActions();
+    void CreateMenus();
+    void InitMainWindow();
+    void InitStatusBar();
+    voi
