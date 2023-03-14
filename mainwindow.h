@@ -96,4 +96,12 @@ private:
     QAction *actionSwapImg;
 
     QMenu *menuDevices;
-    QAction *actionOpenCamer
+    QAction *actionOpenCamera;
+    QAction *actionCloseCamera;
+
+    QMenu *menuPointOperate;
+    QAction *actionGray;
+    QAction *actionHist;
+    QAction *actionHistEqualize;
+    QAction *actionThresholdImg;
+    QAction *actionColorRed
