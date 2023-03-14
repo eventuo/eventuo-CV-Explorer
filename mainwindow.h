@@ -48,4 +48,8 @@ private:
 
 private slots:
     void slotOpenImgSrc();//Open Source Image
-    voi
+    void slotSaveImgSrc();//Save Source Image
+    void slotSaveImgDst();//Save Destination Image
+    void slotSwapImg();//Swap the Source Image and Destination Image
+
+    void slotOpenC
