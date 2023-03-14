@@ -77,3 +77,15 @@ private:
 
 private:
     cv::Mat imgSrc;
+    cv::Mat imgDst;
+
+    QString nameSrcImg;
+    QString pathSrcImg;
+    QString  dirSrcImg;
+
+    QString nameDstImg;
+    QString pathDstImg;
+    QString  dirDstImg;
+
+
+private
