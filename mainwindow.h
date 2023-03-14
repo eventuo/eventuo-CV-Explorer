@@ -64,4 +64,16 @@ private slots:
 
     void slotFlipImg();//flip image:
 
-    void slotFilter2D
+    void slotFilter2D();
+
+    void slotDetectSkin();//detect skin color
+
+private:
+    void resizeEvent(QResizeEvent *);
+
+private:
+    ImageFileOpt optImgFile;
+    CVImgProc procCVImg;
+
+private:
+    cv::Mat imgSrc;
