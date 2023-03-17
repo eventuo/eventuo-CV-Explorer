@@ -104,4 +104,14 @@ private:
     QAction *actionHist;
     QAction *actionHistEqualize;
     QAction *actionThresholdImg;
-    QAction *actionColorRed
+    QAction *actionColorReduce;
+    QAction *actionSaltImage;
+
+    QMenu *menuTransformImg;
+    QAction *actionFlip;
+
+    QMenu *menuFilterImg;
+    QAction *actionFilter2D;
+
+    QMenu *menuDetect;
+ 
