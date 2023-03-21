@@ -114,4 +114,13 @@ private:
     QAction *actionFilter2D;
 
     QMenu *menuDetect;
- 
+    QAction *actionSkinDetect;
+
+    QWidget *widgetMain;
+    QGridLayout *layoutGrid;
+
+    QLabel *labelSrcImgTitle;
+    QLabel *labelSrcImg;
+    QLabel *labelSrcImgInfos;
+    QLabel *labelSrcImgPath;
+
