@@ -133,4 +133,11 @@ private:
     const QColor clrBKApp;
 
 private:
-    cv::Vide
+    cv::VideoCapture captureVideo;
+    QTimer *timerCaptureVideo;
+
+    FUN_POINTER_TYPE typeFunPointer;
+    cv::Mat (*processImg)(const cv::Mat &imgSrc);
+    cv::Mat (CVImgProc::*processCVImg)(const cv::Mat &imgSrc);
+
+pr
