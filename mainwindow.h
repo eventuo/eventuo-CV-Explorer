@@ -124,3 +124,13 @@ private:
     QLabel *labelSrcImgInfos;
     QLabel *labelSrcImgPath;
 
+    QLabel *labelDstImgTitle;
+    QLabel *labelDstImg;
+    QLabel *labelDstImgInfos;
+
+private:
+    const QString strPathQssFile;
+    const QColor clrBKApp;
+
+private:
+    cv::Vide
