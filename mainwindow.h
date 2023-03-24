@@ -140,4 +140,8 @@ private:
     cv::Mat (*processImg)(const cv::Mat &imgSrc);
     cv::Mat (CVImgProc::*processCVImg)(const cv::Mat &imgSrc);
 
-pr
+private slots:
+    void CaptureFrame();
+};
+
+#endif // MAINWINDOW_H
